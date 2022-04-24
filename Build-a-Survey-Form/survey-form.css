@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+}
+
+.user-data > input, select {
+  display: block;
+}
+
+#name, #email, #number, #dropdown {
+  height: 23px;
+}
+
+.opinion > label, .activities > label  {
+  display: block;
+}
