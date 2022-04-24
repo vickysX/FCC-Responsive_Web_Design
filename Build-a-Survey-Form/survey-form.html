@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial_scale=1"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title"><em>Club of Billionaires</em> survey form</h1>
+      <p id="description">We would like to improve our leisure activities</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset class="user-data">
+          <legend>Your Data:</legend>
+          <label id="name-label">Name</label> 
+          <input type="text" id="name" placeholder="Your Name" required />
+          <label id="email-label">Email</label> 
+          <input type="email" id="email" placeholder="Your Email Address" required />
+          <label id="number-label">Age (optional)</label> 
+          <input type="number" id="number" min="14" max="120" placeholder="Your Age"/>
+          <label for="dropdown">Area of interest
+            <select id="dropdown">
+              <option value="0">(select an option)</option>
+              <option value="Music">Music</option>
+              <option value="Sport">Sport</option>
+              <option value="Arts">Figurative Arts</option>
+              <option value="Science">Math and Science</option>
+              <option value="Technology">Technology</option>
+              <option value="Literature">Literature</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="opinion">
+          <legend>Would you recommend your fellow billionaires to join the <em>Club</em>?</legend>
+          <label for="not-sure"><input id="not-sure" type="radio" name="recommendation" value="not sure"/>Not sure</label>
+          <label for="yes"><input id="yes" type="radio" name="recommendation" value="absolutely yes"/>Absolutely yes!</label>
+          <label for="no"><input id="no" type="radio" name="recommendation" value="nah"/>Nah</label>
+        </fieldset>
+        <fieldset class="activities">
+          <legend>Please choose one or more activities that you would like to be implemented at the <i>Club</i>:</legend>
+          <label for="reading"><input id="reading" type="checkbox" name="activities" value="reading groups"/>Reading Groups</label>
+          <label for="cooking"><input id="cooking" type="checkbox" name="activities" value="cooking camp"/>Cooking Camp</label>
+          <label for="soccer"><input id="soccer" type="checkbox" name="activities" value="soccer championship"/>Soccer Championship</label>
+          <label for="psychological-help"><input id="psychological-help" type="checkbox" name="activities" value="psychological help desk">Psychological Help Desk</label>
+          <label for="coding"><input id="coding" type="checkbox" name="activities" value="coding camp"/>Coding Camp</label>
+          <label for="piano"><input id="piano" type="checkbox" name="activities" value="piano lessons"/>Piano Lessons</label>
+          <label for="painting"><input id="painting" type="checkbox" name="activities" value="painting lessons"/>Painting Lessons</label>
+          <label for="gardening"><input id="gardening" type="checkbox" name="activities" value="gardening camp"/>Gardening Camp</label>
+          <label for="dragrace"><input id="dragrace" type="checkbox" name="activities" value="drag context"/>Drag Context</label>
+        </fieldset>
+        <fieldset class="suggestions">
+          <legend>Comments and suggestions:</legend>
+          <textarea id="comments" name="comments and suggestions" placeholder="Speak your mind"></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      Copyright - Club of Billionaires
+    </footer>
+  </body>
+</html>
