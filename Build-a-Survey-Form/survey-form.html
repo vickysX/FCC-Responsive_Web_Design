@@ -4,6 +4,10 @@
     <title>Survey Form</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial_scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="css/text" href="../survey-form.css"/>
   </head>
   <body>
     <header>
@@ -14,32 +18,31 @@
       <form id="survey-form">
         <fieldset class="user-data">
           <legend>Your Data:</legend>
-          <label id="name-label">Name</label> 
-          <input type="text" id="name" placeholder="Your Name" required />
+          <label id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required />
           <label id="email-label">Email</label> 
           <input type="email" id="email" placeholder="Your Email Address" required />
           <label id="number-label">Age (optional)</label> 
           <input type="number" id="number" min="14" max="120" placeholder="Your Age"/>
-          <label for="dropdown">Area of interest
-            <select id="dropdown">
-              <option value="0">(select an option)</option>
-              <option value="Music">Music</option>
-              <option value="Sport">Sport</option>
-              <option value="Arts">Figurative Arts</option>
-              <option value="Science">Math and Science</option>
-              <option value="Technology">Technology</option>
-              <option value="Literature">Literature</option>
-            </select>
-          </label>
+          <label for="dropdown">Area of interest</label>
+          <select id="dropdown">
+            <option value="0">(select an option)</option>
+            <option value="Music">Music</option>
+            <option value="Sport">Sport</option>
+            <option value="Arts">Figurative Arts</option>
+            <option value="Science">Math and Science</option>
+            <option value="Technology">Technology</option>
+            <option value="Literature">Literature</option>
+          </select> 
         </fieldset>
         <fieldset class="opinion">
           <legend>Would you recommend your fellow billionaires to join the <em>Club</em>?</legend>
           <label for="not-sure"><input id="not-sure" type="radio" name="recommendation" value="not sure"/>Not sure</label>
-          <label for="yes"><input id="yes" type="radio" name="recommendation" value="absolutely yes"/>Absolutely yes!</label>
+          <label for="yes"><input id="yes" type="radio" name="recommendation" value="absolutely yes" checked/>Absolutely yes!</label>
           <label for="no"><input id="no" type="radio" name="recommendation" value="nah"/>Nah</label>
         </fieldset>
         <fieldset class="activities">
-          <legend>Please choose one or more activities that you would like to be implemented at the <i>Club</i>:</legend>
+          <legend>Please choose one or more activities that you would like to see implemented at the <i>Club</i>:</legend>
           <label for="reading"><input id="reading" type="checkbox" name="activities" value="reading groups"/>Reading Groups</label>
           <label for="cooking"><input id="cooking" type="checkbox" name="activities" value="cooking camp"/>Cooking Camp</label>
           <label for="soccer"><input id="soccer" type="checkbox" name="activities" value="soccer championship"/>Soccer Championship</label>
@@ -54,11 +57,13 @@
           <legend>Comments and suggestions:</legend>
           <textarea id="comments" name="comments and suggestions" placeholder="Speak your mind"></textarea>
         </fieldset>
-        <button type="submit" id="submit">Submit</button>
+        <fieldset class="button">
+          <button type="submit" id="submit">Submit your suggestions</button>
+        </fieldset>
       </form>
     </main>
     <footer>
-      Copyright - Club of Billionaires
+      <p>&copy; 1880 - 2022 Club of Billionaires</p>
     </footer>
   </body>
 </html>

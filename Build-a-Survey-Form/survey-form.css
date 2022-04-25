@@ -1,19 +1,82 @@
+body {
+  font-family: 'Libre Bodoni', serif;
+  background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/new-york-city-wall-street-charging-bull-black-and-white-christopher-arndt.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #dd3333;
+}
+
 header {
   text-align: center;
+  font-weight: bold;
+  margin: auto;
+  padding-top: 20px;
 }
 
 main {
-  margin: auto;
+  margin: 50px auto;
+  border-radius: 20px;
+  width: 800px;
+  padding: 20px;
+  background-color: #dd4444;
+  color: white;
 }
 
-.user-data > input, select {
+fieldset {
+  border: none;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+label {
+  margin-top: 7px;
+}
+
+.user-data > input {
   display: block;
+  width: 99%;
+}
+
+#dropdown {
+  display: block;
+  width: 100%;
 }
 
 #name, #email, #number, #dropdown {
-  height: 23px;
+  height: 25px;
+  margin-top: 2.5px;
+  margin-bottom: 10px;
+  font-family: serif;
 }
 
 .opinion > label, .activities > label  {
   display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+textarea {
+  width: 99%;
+  height: 200px;
+  font-family: 'Libre Bodoni', serif;
+}
+
+button {
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: serif;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 80px;
 }
