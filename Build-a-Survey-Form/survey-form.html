@@ -16,8 +16,8 @@
     </header>
     <main>
       <form id="survey-form">
-        <fieldset class="user-data">
-          <legend>Your Data:</legend>
+        <fieldset class="user-data" aria-labelledby="user-data" name="user-data">
+          <legend id="user-data">Your Data:</legend>
           <label id="name-label">Name</label>
             <input type="text" id="name" placeholder="Your Name" required />
           <label id="email-label">Email</label> 
@@ -35,14 +35,14 @@
             <option value="Literature">Literature</option>
           </select> 
         </fieldset>
-        <fieldset class="opinion">
-          <legend>Would you recommend your fellow billionaires to join the <em>Club</em>?</legend>
+        <fieldset class="opinion" aria-labelledby="opinion" name="opinion">
+          <legend id="opinion">Would you recommend your fellow billionaires to join the <em>Club</em>?</legend>
           <label for="not-sure"><input id="not-sure" type="radio" name="recommendation" value="not sure"/>Not sure</label>
           <label for="yes"><input id="yes" type="radio" name="recommendation" value="absolutely yes" checked/>Absolutely yes!</label>
           <label for="no"><input id="no" type="radio" name="recommendation" value="nah"/>Nah</label>
         </fieldset>
-        <fieldset class="activities">
-          <legend>Please choose one or more activities that you would like to see implemented at the <i>Club</i>:</legend>
+        <fieldset class="activities" aria-labelledby="activities" name="activities">
+          <legend id="activities">Please choose one or more activities that you would like to see implemented at the <i>Club</i>:</legend>
           <label for="reading"><input id="reading" type="checkbox" name="activities" value="reading groups"/>Reading Groups</label>
           <label for="cooking"><input id="cooking" type="checkbox" name="activities" value="cooking camp"/>Cooking Camp</label>
           <label for="soccer"><input id="soccer" type="checkbox" name="activities" value="soccer championship"/>Soccer Championship</label>
@@ -53,8 +53,8 @@
           <label for="gardening"><input id="gardening" type="checkbox" name="activities" value="gardening camp"/>Gardening Camp</label>
           <label for="dragrace"><input id="dragrace" type="checkbox" name="activities" value="drag context"/>Drag Context</label>
         </fieldset>
-        <fieldset class="suggestions">
-          <legend>Comments and suggestions:</legend>
+        <fieldset class="suggestions" aria-labelledby="suggestions" name="suggestions">
+          <legend id="suggestions">Comments and suggestions:</legend>
           <textarea id="comments" name="comments and suggestions" placeholder="Speak your mind"></textarea>
         </fieldset>
         <fieldset class="button">
